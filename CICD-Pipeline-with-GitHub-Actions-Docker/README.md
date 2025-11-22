@@ -57,16 +57,53 @@ The GitHub Actions workflow defined in `.github/workflows/ci-cd.yml` performs th
 ### GitHub Actions Workflow
 ![alt text](screenshots/GitHubActions.png)
 
-### Local Test
-![alt text](screenshots/LocalTest.png)
+### A: Test app locally
+```npm install```
+<img width="671" height="283" alt="image" src="https://github.com/user-attachments/assets/3cabbd40-2fcf-43d5-af52-c8b5672adfd9" />
+
+```npm test```
+<img width="625" height="135" alt="image" src="https://github.com/user-attachments/assets/caf769aa-4607-4bd2-9f1a-7feead8797d3" />
+
+``` npm start ```
+<img width="602" height="134" alt="image" src="https://github.com/user-attachments/assets/9c9f92f3-ffe1-40f7-ac28-45f0fee5f08a" />
 
 
 ![alt text](screenshots/JsonResponse.png)
 
-<img width="846" height="560" alt="image" src="https://github.com/user-attachments/assets/8508784d-9b76-4aaa-894a-77a5cd263022" />
+### B: Build Docker image locally
+```
+ docker build -t rubi58/cicd-pipeline-with-github-actions-docker:local .
 
 
-<img width="809" height="473" alt="image" src="https://github.com/user-attachments/assets/24083676-5177-4e0b-9781-0b5f6ed0749e" />
+```
+<img width="675" height="336" alt="image" src="https://github.com/user-attachments/assets/867a0e11-ab31-479f-abf1-6bc16a34ea2e" />
+
+<img width="583" height="240" alt="image" src="https://github.com/user-attachments/assets/f7b3f6b5-0835-4de1-9f0c-9bc9c727c3b7" />
+
+<img width="884" height="110" alt="image" src="https://github.com/user-attachments/assets/761210de-343f-460c-94c2-6b369709fc3e" />
+<img width="766" height="356" alt="image" src="https://github.com/user-attachments/assets/d532ffd0-5893-443b-af1f-a1d5a34e6831" />
+<img width="747" height="102" alt="image" src="https://github.com/user-attachments/assets/52a49d30-eb4f-42b2-81cd-7423abe92eaf" />
+
+
+```
+ docker run --rm -p 3001:3000 rubi58/cicd-pipeline-with-github-actions-docker:local
+# open http://localhost:3000
+
+```
+<img width="938" height="65" alt="image" src="https://github.com/user-attachments/assets/ef66213e-3f87-4e64-893a-8d69f909c28a" />
+
+### C:Test with docker-compose
+```
+docker-compose up --build
+# open http://localhost:3000
+```
+<img width="717" height="541" alt="image" src="https://github.com/user-attachments/assets/30baac97-fced-4619-9fbe-d9090a19a929" />
+
+<img width="653" height="246" alt="image" src="https://github.com/user-attachments/assets/64d61b7f-74c1-4b1b-99d5-44e91cc82687" />
+
+<img width="783" height="214" alt="image" src="https://github.com/user-attachments/assets/5cb629fc-3442-4d3b-be72-f30c3d9929d8" />
+
+### After the image is pushed to Docker Hub — deploy to Minikube
 
 
 ## Conclusion
