@@ -54,17 +54,8 @@ The GitHub Actions workflow defined in `.github/workflows/ci-cd.yml` performs th
 
 
 ## Screenshots
-### GitHub Actions Workflow
-### 1. Successful Pipeline:
-<img width="1350" height="596" alt="image" src="https://github.com/user-attachments/assets/467c76d4-bd6e-44bc-a407-a6a643f8cc9c" />
 
-### 2.  Failed Pipeline:
-<img width="1352" height="589" alt="image" src="https://github.com/user-attachments/assets/b3cf6fdb-1857-4c77-81f7-619504344609" />
-
-### 3. All Workflows Ran:
-<img width="1336" height="583" alt="image" src="https://github.com/user-attachments/assets/755bdd14-bbe3-4093-bcce-266dd47b750a" />
-
-
+### Local testing workflow (before pushing)
 
 ### A: Test app locally
 ```npm install```
@@ -111,6 +102,18 @@ docker-compose up --build
 <img width="653" height="246" alt="image" src="https://github.com/user-attachments/assets/64d61b7f-74c1-4b1b-99d5-44e91cc82687" />
 
 <img width="783" height="214" alt="image" src="https://github.com/user-attachments/assets/5cb629fc-3442-4d3b-be72-f30c3d9929d8" />
+
+### GitHub Actions Workflow
+On push, GitHub Actions triggers. Go to repo → Actions →  workflow run → view logs for ```test``` and ```build-and-push```
+### 1. Successful Pipeline:
+<img width="1350" height="596" alt="image" src="https://github.com/user-attachments/assets/467c76d4-bd6e-44bc-a407-a6a643f8cc9c" />
+
+### 2.  Failed Pipeline:
+<img width="1352" height="589" alt="image" src="https://github.com/user-attachments/assets/b3cf6fdb-1857-4c77-81f7-619504344609" />
+
+### 3. All Workflows Ran:
+<img width="1336" height="583" alt="image" src="https://github.com/user-attachments/assets/755bdd14-bbe3-4093-bcce-266dd47b750a" />
+
 
 ### After the image is pushed to Docker Hub — deploy to Minikube
 
