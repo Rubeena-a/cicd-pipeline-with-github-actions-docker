@@ -60,7 +60,14 @@ The GitHub Actions workflow defined in `.github/workflows/ci-cd.yml` performs th
 ### Local Test
 ![alt text](screenshots/LocalTest.png)
 
+
 ![alt text](screenshots/JsonResponse.png)
+
+<img width="846" height="560" alt="image" src="https://github.com/user-attachments/assets/8508784d-9b76-4aaa-894a-77a5cd263022" />
+
+
+<img width="809" height="473" alt="image" src="https://github.com/user-attachments/assets/24083676-5177-4e0b-9781-0b5f6ed0749e" />
+
 
 ## Conclusion
 This project demonstrates how to set up a CI/CD pipeline using GitHub Actions and Docker. By following the steps outlined above, you can automate the testing and deployment of your applications, ensuring faster and more reliable releases.
